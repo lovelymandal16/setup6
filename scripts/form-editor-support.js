@@ -363,7 +363,7 @@ export function attachEventListners(main) {
 //  console.log('Adding meta tag for aem forms authoring assistant extension:', meta.content);
 //   document.head.appendChild(meta);
 // }
-enableAuthoringAssistantExtension();
+//enableAuthoringAssistantExtension();
 
 const observer = new MutationObserver(instrumentForms);
 observer.observe(document, { childList: true, subtree: true, attributeFilter: ['form'] });
