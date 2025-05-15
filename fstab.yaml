@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: https://ec5d-103-43-112-97.ngrok-free.app/bin/franklin.delivery/lovelymandal16/setup6/main
+    url: https://gelding-sought-condor.ngrok-free.app/bin/franklin.delivery/lovelymandal16/setup6/main
     type: "markup"
     suffix: ".html"
