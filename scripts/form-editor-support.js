@@ -358,9 +358,12 @@ export function attachEventListners(main) {
    const meta = document.createElement('meta');
    meta.name = 'urn:adobe:aue:config:extensions';
 
-  // meta.content = 'https://localhost.corp.adobe.com:8013/resources/universal_editor.html?livecycle-forms-spa_version=local';
-meta.content =   'https://experience-stage.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-554-ce1b94af299404280648d3c832b9e97c1ea9a6b5';
-   //PR-530-51438302f0972ee340e528ce2ff3fac4b1bef201
+if (window.location.href.includes('cmstg')==true){
+  meta.content =   'https://experience-stage.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-554-ce1b94af299404280648d3c832b9e97c1ea9a6b5';
+}
+else{
+  meta.content =   'https://experience.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-554-ce1b94af299404280648d3c832b9e97c1ea9a6b5';
+}
 
   console.log('Adding meta tag for aem forms authoring assistant extension:', meta.content);
    document.head.appendChild(meta);
